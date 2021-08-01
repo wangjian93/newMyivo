@@ -15,7 +15,8 @@ public class HomeController {
     private static final String HOME_PAGE_URL = "page/home.html";
 
     @RequestMapping(value = {"/", "/home"})
-    public String home() {
+    public static String home() {
+        System.out.println(HOME_PAGE_URL);
         return HOME_PAGE_URL;
     }
 }
